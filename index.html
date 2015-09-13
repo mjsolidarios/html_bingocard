@@ -1,53 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>BINGO CARD</title>
-    <link rel="stylesheet" href="css/master.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML BINGO</title>
+  <link rel="stylesheet" href="css/roboto-fontface.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/material.min.css" charset="utf-8">
+  <link rel="stylesheet" href="css/master.css" charset="utf-8">
 </head>
 
 <body>
-    <div class="lola">
-        <div class="momma">
-            <div class="child bingo-header">B</div>
-            <div class="child bingo-header">I</div>
-            <div class="child bingo-header">N</div>
-            <div class="child bingo-header">G</div>
-            <div class="child bingo-header">O</div>
-
-            <div class="child B">12</div>
-            <div class="child I">8</div>
-            <div class="child N">9</div>
-            <div class="child G">7</div>
-            <div class="child O">75</div>
-
-            <div class="child B">12</div>
-            <div class="child I">8</div>
-            <div class="child N">9</div>
-            <div class="child G">7</div>
-            <div class="child O">75</div>
-
-            <div class="child B">12</div>
-            <div class="child I">8</div>
-            <div class="child FREE"></div>
-            <div class="child G">7</div>
-            <div class="child O">75</div>
-
-            <div class="child B">12</div>
-            <div class="child I">8</div>
-            <div class="child N">9</div>
-            <div class="child G">7</div>
-            <div class="child O">75</div>
-
-            <div class="child B">12</div>
-            <div class="child I">8</div>
-            <div class="child N">9</div>
-            <div class="child G">7</div>
-            <div class="child O">75</div>
+  <div class="bingo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+    <header class="bingo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">HTML BINGO Card</span>
+        <div class="mdl-layout-spacer"></div>
+      </div>
+    </header>
+    <div class="bingo-ribbon"></div>
+    <main class="bingo-main mdl-layout__content">
+      <div class="bingo-container mdl-grid">
+        <div class="bingo-content">
+          <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+            <thead>
+              <tr>
+                <th class="mdl-data-table__cell--non-numeric bingo-header">B</th>
+                <th class="mdl-data-table__cell--non-numeric bingo-header">I</th>
+                <th class="mdl-data-table__cell--non-numeric bingo-header">N</th>
+                <th class="mdl-data-table__cell--non-numeric bingo-header">G</th>
+                <th class="mdl-data-table__cell--non-numeric bingo-header">O</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric B">0</td>
+                <td class="mdl-data-table__cell--non-numeric I">0</td>
+                <td class="mdl-data-table__cell--non-numeric N">0</td>
+                <td class="mdl-data-table__cell--non-numeric G">0</td>
+                <td class="mdl-data-table__cell--non-numeric O">0</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric B">0</td>
+                <td class="mdl-data-table__cell--non-numeric I">0</td>
+                <td class="mdl-data-table__cell--non-numeric N">0</td>
+                <td class="mdl-data-table__cell--non-numeric G">0</td>
+                <td class="mdl-data-table__cell--non-numeric O">0</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric B">0</td>
+                <td class="mdl-data-table__cell--non-numeric I">0</td>
+                <td class="mdl-data-table__cell--non-numeric FREE">&nbsp;</td>
+                <td class="mdl-data-table__cell--non-numeric G">0</td>
+                <td class="mdl-data-table__cell--non-numeric O">0</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric B">0</td>
+                <td class="mdl-data-table__cell--non-numeric I">0</td>
+                <td class="mdl-data-table__cell--non-numeric N">0</td>
+                <td class="mdl-data-table__cell--non-numeric G">0</td>
+                <td class="mdl-data-table__cell--non-numeric O">0</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric B">0</td>
+                <td class="mdl-data-table__cell--non-numeric I">0</td>
+                <td class="mdl-data-table__cell--non-numeric N">0</td>
+                <td class="mdl-data-table__cell--non-numeric G">0</td>
+                <td class="mdl-data-table__cell--non-numeric O">0</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-    </div>
-    <script src="js/bingo.js" charset="utf-8"></script>
-    <script src="js/bingo-card.js"></script>
+      </div>
+      <footer class="bingo-footer mdl-mini-footer">
+        <div class="mdl-mini-footer--left-section">
+          <ul class="mdl-mini-footer--link-list">
+            <li><a href="mailto: mjsolidarios@wvsu.edu.ph">mjsolidarios@wvsu.edu.ph</a></li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </div>
+  <script src="js/material.min.js" charset="utf-8"></script>
+  <script src="js/bingo.js" charset="utf-8"></script>
+  <script src="js/bingo-card.js"></script>
 </body>
 
 </html>
