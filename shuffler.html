@@ -1,18 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title>BINGO SHUFFLER</title>
-  <link rel="stylesheet" href="css/master.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BINGO Shuffler</title>
+  <link rel="stylesheet" href="css/roboto-fontface.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/material.min.css" charset="utf-8">
+  <link rel="stylesheet" href="css/master.css" charset="utf-8">
 </head>
 
 <body>
-  <h1>X 0</h1>
-  <button type="button" name="button">Generate Combo</button>
-  <p> Items left:
-    <span></span>
-  </p>
+  <div class="bingo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+    <header class="bingo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">
+          <span class="count mdl-badge" data-badge="75">BINGO Shuffler</span>
+        </span>
+        <div class="mdl-layout-spacer"></div>
+      </div>
+    </header>
+    <div class="shuffler-ribbon"></div>
+    <main class="bingo-main mdl-layout__content shuffler-main">
+      <div class="shuffler-container mdl-grid">
+        <div class="shuffler-content">
+
+          <h1 class="combo">X 0</h1>
+          <div class="control">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+              Shuffle n&apos; Pick
+            </button>
+          </div>
+          <p>&nbsp;</p>
+          <table class="mdl-data-table mdl-js-data-table">
+            <thead>
+              <tr>
+                <th class="mdl-data-table__cell--non-numeric">#</th>
+                <th class="mdl-data-table__cell--non-numeric">Combo Log</th>
+              </tr>
+            </thead>
+            <tbody>
+                <!--Auto-generated values-->
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </main>
+  </div>
+  <script src="js/material.min.js" charset="utf-8"></script>
   <script src="js/bingo.js" charset="utf-8"></script>
   <script src="js/bingo-shuffler.js" charset="utf-8"></script>
 </body>

@@ -1,19 +1,16 @@
 * {
-    font-family: "Roboto-Light"
+    font-family: "Roboto-Light", "Roboto";
 }
 
+/* BINGO Card Styles*/
+
 .bingo-header {
-  color: #000
+  color: #000;
 }
 
 .B:hover, .I:hover, .N:hover, .G:hover, .O:hover {
     background-color: #7d7d7d;
     cursor: pointer
-}
-
-.momma {
-    width: 450px;
-    margin: 0 auto;
 }
 
 .im-selected {
@@ -37,6 +34,22 @@
     height: 35px
 }
 
+/* BINGO Shuffler Styles */
+
+.shuffler-main {
+background-color: #fff;
+}
+
+.combo {
+  text-align: center;
+}
+
+.control{
+  text-align: center;
+}
+
+/* Material Design Styles */
+
 /**
  * Copyright 2015 Google Inc. All Rights Reserved.
  *
@@ -57,6 +70,15 @@
   width: 100%;
   height: 40vh;
   background-color: #333;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+
+.shuffler-ribbon {
+  width: 100%;
+  height: 40vh;
+  background-color: #fff;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
@@ -84,10 +106,21 @@
   text-align: center;
 }
 
-.bingo-content {
+.bingo-content, .shuffler-content {
   padding: 0px;
   margin: 0 auto;
   margin-bottom: 40px;
+}
+
+.shuffler-content{
+  margin-bottom: 60px;
+}
+
+.shuffler-container {
+  max-width: 600px;
+  width: calc(100% - 16px);
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .bingo-layout.is-small-screen .bingo-content {
